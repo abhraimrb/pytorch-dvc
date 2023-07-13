@@ -1,0 +1,11 @@
+params:
+- params.yaml
+metrics:
+- metrics.json
+plots:
+- plots/metrics:
+    x: step
+artifacts:
+  lightning-model:
+    path: ../pytorch_model/epoch=4-step=3520.ckpt
+    type: model
